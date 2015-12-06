@@ -10,3 +10,12 @@ extension UIViewController {
         self.presentViewController(alertController, animated: true, completion: nil)
     }
 }
+
+// Example Usage
+class TestVC: UIViewController {
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.alert("Hello", message: "This is a sample alert controller", actionTitle: "Dismiss")
+    }
+}
